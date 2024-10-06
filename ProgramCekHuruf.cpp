@@ -18,6 +18,30 @@ void tampilkanMenu(){
 }
 
 bool cekHuruf(char karakter){
-  return (karakter >= 'A' && karakter <= 'Z')||
-    (karakter >= 'a' && karakter <= 'z');
+  return (karakter >= 'A' && karakter <= 'Z') || (karakter >= 'a' && karakter <= 'z');
 }
+
+int main() {
+  int pilihan;
+  char karakter;
+
+  do {
+      tampilkanMenu();
+      cout << "Masukkan pilihan: ";
+      cin >> pilihan;
+
+      switch (pilihan) {
+          case 1;
+              cout << "Masukkan karakter: ";
+              cin >> karakter;
+              if (cekHuruf(karakter)) {
+                  if (cekKapital(karakter)) {
+                      cout << karakter << " adalah huruf kapital"  << endl;
+                  } else {
+                      cout << karakter << " bukan huruf kapital" << endl;
+                  }
+              } else {
+                  cout << "Input tidak valid, Silakan masukkan huruf" << endl;
+              }
+              break;
+  

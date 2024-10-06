@@ -31,7 +31,7 @@ int main() {
       cin >> pilihan;
 
       switch (pilihan) {
-          case 1;
+          case 1:
               cout << "Masukkan karakter: ";
               cin >> karakter;
               if (cekHuruf(karakter)) {

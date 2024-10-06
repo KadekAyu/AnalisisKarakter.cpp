@@ -44,4 +44,28 @@ int main() {
                   cout << "Input tidak valid, Silakan masukkan huruf" << endl;
               }
               break;
-  
+            
+             case 2:
+                cout << "Masukkan karakter: ";
+                cin >> karakter;
+                if (cekHuruf(karakter)) {
+                    if (cekKecil(karakter)) {
+                        cout << karakter << " adalah huruf kecil" << endl;
+                    } else {
+                        cout << karakter << " bukan huruf kecil" << endl;
+                    }
+                } else {
+                    cout << "Input tidak valid, Silakan masukkan huruf" << endl;
+                }
+                break;
+            case 3:
+                cout << "Keluar program" << endl;
+                break;
+            default:
+                cout << "Pilihan tidak valid, Silakan coba lagi" << endl;
+        }
+        cout << endl;
+    } while (pilihan != 3);
+
+    return 0;
+}

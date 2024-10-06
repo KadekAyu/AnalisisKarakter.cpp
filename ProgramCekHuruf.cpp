@@ -5,7 +5,7 @@ bool cekKapital(char karakter){
   return (karakter >= 'A' && karakter <= 'Z');
 }
 
-bool cekkecil(char karakter){
+bool cekKecil(char karakter){
   return(karakter >= 'a' && karakter <= 'z');
 }
 
